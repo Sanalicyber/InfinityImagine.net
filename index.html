@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Togthr template</title>
-    <meta property="og:title" content="Togthr template" />
+    <title>Soft UI Pro</title>
+    <meta property="og:title" content="Soft UI Pro" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -12,8 +12,8 @@
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: Inter;
-        font-size: 16px;
+        font-family: Open Sans;
+        font-size: 1rem;
       }
 
       body {
@@ -22,1204 +22,582 @@
         text-decoration: none;
         text-transform: none;
         letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
         background-color: var(--dl-color-gray-white);
 
       }
     </style>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
       data-tag="font"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <!--This is the head section-->
-    <!-- <style> ... </style> -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/blaze-slider@latest/dist/blaze.css"
-    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div>
-      <script
-        type="text/javascript"
-        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
-      ></script>
       <link href="./index.css" rel="stylesheet" />
 
       <div class="home-container">
-        <section class="home-hero">
-          <video
-            src="https://presentation-website-assets.teleporthq.io/templates/togthr/togthr-video.mp4"
-            loop=""
-            muted=""
-            poster="public/hero-bg.png"
-            preload="auto"
-            autoplay=""
-            playsinline=""
-            class="home-video"
-          ></video>
-          <header data-thq="thq-navbar" class="home-navbar">
-            <img alt="image" src="public/logo.svg" class="home-branding" />
-            <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <div class="home-hamburger">
-                <img alt="image" src="public/hamburger.svg" class="home-icon" />
+        <div data-role="Header" class="header-header">
+          <nav class="header-nav">
+            <div class="header-container">
+              <a href="index.html" class="header-navlink Large">
+                Soft UI Design System
+              </a>
+              <div class="header-menu">
+                <a href="index.html" class="header-navlink1 Large">Home</a>
+                <a href="profile.html" class="header-navlink2 Large">Profile</a>
+                <a href="coming-soon.html" class="header-navlink3 Large">
+                  Coming Soon
+                </a>
               </div>
-            </div>
-            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-              <div
-                data-thq="thq-mobile-menu-nav"
-                data-role="Nav"
-                class="home-nav"
-              >
-                <div class="home-container1">
-                  <img alt="image" src="public/logo.svg" class="home-image" />
-                  <div data-thq="thq-close-menu" class="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="home-icon01">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
+              <div class="header-container1">
+                <div class="header-container2">
+                  <div class="primary-pink-button-container">
+                    <button
+                      class="primary-pink-button-button button ButtonSmall"
+                    >
+                      <span>buy now</span>
+                    </button>
                   </div>
                 </div>
-                <nav
-                  data-thq="thq-mobile-menu-nav-links"
-                  data-role="Nav"
-                  class="home-nav1"
-                >
-                  <span class="home-text">About</span>
-                  <span class="home-text01">Features</span>
-                  <span class="home-text02">Pricing</span>
-                  <span class="home-text03">Team</span>
-                  <span class="home-text04">Blog</span>
-                </nav>
-                <div class="home-container2">
-                  <button class="home-login button">Login</button>
-                  <button class="button">Register</button>
+                <div data-role="BurgerMenu" class="header-burger-menu">
+                  <svg viewBox="0 0 1024 1024" class="header-icon">
+                    <path
+                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                    ></path>
+                  </svg>
                 </div>
               </div>
-              <div class="home-icon-group">
-                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon03">
+            </div>
+          </nav>
+          <div data-role="MobileMenu" class="header-mobile-menu">
+            <div class="header-top">
+              <a href="index.html" class="header-navlink4 Large">
+                Soft UI Design System
+              </a>
+              <div data-role="CloseMobileMenu" class="header-close-menu">
+                <svg viewBox="0 0 1024 1024" class="header-icon2">
                   <path
-                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                  ></path></svg
-                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon05">
-                  <path
-                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                  ></path></svg
-                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon07">
-                  <path
-                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
                   ></path>
                 </svg>
               </div>
             </div>
-          </header>
-          <div class="home-hero-content">
-            <div class="home-header-container">
-              <div class="home-header">
-                <h1 class="home-heading">
-                  <span>Face-to-face with</span>
-                  <span class="home-text06">imagination</span>
-                  <br />
-                </h1>
+            <div class="header-mid">
+              <div class="header-menu1">
+                <a href="index.html" class="header-navlink5 Large">Home</a>
+                <a href="profile.html" class="header-navlink6 Large">Profile</a>
+                <a href="coming-soon.html" class="header-navlink7 Large">
+                  Coming Soon
+                </a>
               </div>
-              <p class="home-caption">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </p>
             </div>
-            <button class="button home-button">
-              <span>
-                <span>Get started today</span>
-                <br />
+            <div class="header-bot">
+              <div class="primary-pink-button-container">
+                <button class="primary-pink-button-button button ButtonSmall">
+                  <span>buy now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-hero">
+          <div class="home-container01">
+            <div class="home-card">
+              <h1 class="home-text HeadingOne">Soft Design System.</h1>
+              <h1 class="home-text01 HeadingOne">Choose the best</h1>
+              <span class="home-text02 Lead">
+                <span>
+                  Find the story of Creative Tim's most complex design
+                </span>
+                <span>
+                  system and all the work that make this design available.
+                </span>
               </span>
-            </button>
-          </div>
-        </section>
-        <section class="home-note">
-          <h2 class="home-caption01">
-            The most comprehensive lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna.
-          </h2>
-        </section>
-        <section class="home-statistics">
-          <div class="home-content">
-            <div class="home-stat">
-              <h3 class="home-header01">$1.69M</h3>
-              <span class="home-caption02">Consectetur adipiscing</span>
-            </div>
-            <div class="home-stat1">
-              <h3 class="home-header02">Multiverse</h3>
-              <span class="home-caption03">Unde omnis iste</span>
-            </div>
-            <div class="home-stat2">
-              <h3 class="home-header03">500K</h3>
-              <span class="home-caption04">Accusantium doloremque</span>
-            </div>
-          </div>
-        </section>
-        <section class="home-slider">
-          <div class="home-header04">
-            <h2 class="home-heading01">
-              <span>The first all-in-one verse&nbsp;</span>
-              <span class="home-text12">o</span>
-              <span class="home-text13">ptimized for growth.</span>
-            </h2>
-          </div>
-          <div class="home-selector">
-            <p class="home-caption05">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="home-slide-titles">
-              <div class="slide-title"><span>Metaverse</span></div>
-              <div class="slide-title slide-title-active">
-                <span>Ecosystems</span>
-              </div>
-              <div class="slide-title"><span>Development</span></div>
-              <div class="slide-title"><span>Integration</span></div>
-            </div>
-          </div>
-        </section>
-        <section class="home-slides">
-          <div class="home-slider1 slider blaze-slider">
-            <div class="home-slider-container blaze-container">
-              <div class="home-slider-track-container blaze-track-container">
-                <div class="home-slider-track blaze-track">
-                  <div data-role="current-banner" class="banner">
-                    <img
-                      alt="image"
-                      src="public/slider-ecosystems-400h.png"
-                      class="home-image01"
-                    />
-                    <div class="home-content01">
-                      <div class="home-header05">
-                        <h3 class="home-heading02">Metaverse</h3>
-                        <p class="home-caption06">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div class="home-more">
-                        <span class="home-caption07">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon09">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-role="current-banner" class="banner">
-                    <img
-                      alt="image"
-                      src="public/slider-ecosystems-400h.png"
-                      class="home-image02"
-                    />
-                    <div class="home-content02">
-                      <div class="home-header06">
-                        <h3 class="home-heading03">Ecosystems</h3>
-                        <p class="home-caption08">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div class="home-more1">
-                        <span class="home-caption09">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon11">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-role="current-banner" class="banner">
-                    <img
-                      alt="image"
-                      src="public/slider-ecosystems-400h.png"
-                      class="home-image03"
-                    />
-                    <div class="home-content03">
-                      <div class="home-header07">
-                        <h3 class="home-heading04">Development</h3>
-                        <p class="home-caption10">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div class="home-more2">
-                        <span class="home-caption11">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon13">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-role="current-banner" class="banner">
-                    <img
-                      alt="image"
-                      src="public/slider-ecosystems-400h.png"
-                      class="home-image04"
-                    />
-                    <div class="home-content04">
-                      <div class="home-header08">
-                        <h3 class="home-heading05">Integration</h3>
-                        <p class="home-caption12">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div class="home-more3">
-                        <span class="home-caption13">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon15">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
+              <div class="home-container02">
+                <div class="home-container03">
+                  <div class="primary-pink-button-container">
+                    <button
+                      class="primary-pink-button-button button ButtonSmall"
+                    >
+                      <span>contact us</span>
+                    </button>
                   </div>
                 </div>
-              </div>
-              <div class="home-controls">
-                <button
-                  data-role="previous-banner-button"
-                  class="home-previous blaze-prev button"
-                >
-                  <svg viewBox="0 0 1024 1024" class="home-icon17">
-                    <path
-                      d="M542.165 780.501l-225.835-225.835h494.336c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-494.336l225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-298.667 298.667c-4.096 4.096-7.168 8.789-9.259 13.824-2.176 5.205-3.243 10.795-3.243 16.341 0 10.923 4.181 21.845 12.501 30.165l298.667 298.667c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
-                    ></path>
-                  </svg>
-                </button>
-                <button
-                  data-role="next-banner-button"
-                  class="home-next blaze-next button"
-                >
-                  <svg viewBox="0 0 1024 1024" class="home-icon19">
-                    <path
-                      d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <dangerous-html
-              html="<script>
-const el = document.querySelector('.blaze-slider')
-
-new BlazeSlider(el, {
-  all: {
-    slidesToShow: 3,
-    slideGap: '80px',
-    loop: true,
-    enableAutoplay: true,
-  },
-})
-</script>"
-            ></dangerous-html>
-          </div>
-        </section>
-        <section class="home-get-started">
-          <div class="home-header-container1">
-            <div class="home-header09">
-              <h2 class="home-heading06">
-                Companies will dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore veniam and more
-                opportunities.
-              </h2>
-              <p class="home-caption14">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="home-button1">
-              <button class="button"><span>Get started today</span></button>
-            </div>
-          </div>
-          <img
-            alt="image"
-            src="public/getstarted-800w.png"
-            class="home-image05"
-          />
-        </section>
-        <section class="home-objectives">
-          <div class="home-content05">
-            <span class="home-text19">Objectives</span>
-            <div class="home-objectives-list">
-              <div class="objective">
-                <h3 class="home-text20">Growth</h3>
-                <p class="home-text21">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="objective home-objective1">
-                <h3 class="home-text22">Develop</h3>
-                <p class="home-text23">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="objective home-objective2">
-                <h3 class="home-text24">Optimize</h3>
-                <p class="home-text25">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-growth">
-          <div class="home-content06">
-            <div class="home-header10">
-              <div class="home-header11">
-                <h2 class="home-heading07">
-                  <span>Multiverse optimized for</span>
-                  <span class="home-text27">growth.</span>
-                  <br />
-                </h2>
-              </div>
-              <p class="home-caption15">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p class="home-caption16">
-                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor
-              </p>
-            </div>
-            <div class="home-testimonial">
-              <div class="home-content07">
-                <span class="home-text29">Testimonial</span>
-                <p class="home-text30">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.”
-                </p>
-              </div>
-              <div class="home-information">
-                <div class="home-author">
-                  <img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjcxMDU2MzMz&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-icon21"
-                  />
-                  <span class="home-name">Andrew Gonzales</span>
-                </div>
-                <img alt="image" src="public/logoipsum.svg" class="home-from" />
-              </div>
-            </div>
-          </div>
-          <div class="home-images">
-            <div class="home-square"></div>
-            <img
-              alt="image"
-              src="public/growth-1400w.png"
-              class="home-image06"
-            />
-          </div>
-        </section>
-        <section class="home-experience">
-          <div class="home-images1">
-            <div class="home-square1"></div>
-            <img
-              alt="image"
-              src="public/experience-1400w.png"
-              class="home-image07"
-            />
-          </div>
-          <div class="home-content08">
-            <div class="home-header12">
-              <div class="home-header-container2">
-                <div class="home-header13">
-                  <h2 class="home-heading08">
-                    <span>A worlds class&nbsp;</span>
-                    <span class="home-text32">experience</span>
-                  </h2>
-                </div>
-                <p class="home-caption17">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                  eiusmod.
-                </p>
-              </div>
-              <div class="home-checkmarks">
-                <div class="home-check">
-                  <div class="home-mark">
-                    <svg viewBox="0 0 1024 1024" class="home-icon22">
-                      <path
-                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span class="home-text33">
-                    Duis aute irure dolor in reprehenderit
-                  </span>
-                </div>
-                <div class="home-check1">
-                  <div class="home-mark1">
-                    <svg viewBox="0 0 1024 1024" class="home-icon24">
-                      <path
-                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span class="home-text34">Lorem ipsum dolor sit amet</span>
-                </div>
-                <div class="home-check2">
-                  <div class="home-mark2">
-                    <svg viewBox="0 0 1024 1024" class="home-icon26">
-                      <path
-                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span class="home-text35">
-                    Voluptate velit esse cillum dolore eu fugiat nulla
-                  </span>
-                </div>
-                <div class="home-check3">
-                  <div class="home-mark3">
-                    <svg viewBox="0 0 1024 1024" class="home-icon28">
-                      <path
-                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span class="home-text36">
-                    Excepteur sint occaecat cupidatat non proident sunt in culpa
-                  </span>
+                <div class="outline-gray-button-container">
+                  <button class="outline-gray-button-button button ButtonSmall">
+                    <span>read more</span>
+                  </button>
                 </div>
               </div>
-            </div>
-            <div class="home-testimonial1">
-              <div class="home-content09">
-                <span class="home-text37">Testimonial</span>
-                <p class="home-text38">
-                  “Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.”
-                </p>
-              </div>
-              <div class="home-information1">
-                <div class="home-author1">
-                  <img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1618151313441-bc79b11e5090?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEzfHxwb3RyYWl0fGVufDB8fHx8MTY3MTA1NjMzMw&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-icon30"
-                  />
-                  <span class="home-name1">Cory Smith</span>
-                </div>
+              <div class="home-container04">
                 <img
                   alt="image"
-                  src="public/logoipsum-2.svg"
-                  class="home-from1"
+                  src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-pinterest.svg"
+                  class="home-image"
+                />
+                <img
+                  alt="image"
+                  src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-netflix.svg"
+                  class="home-image01"
+                />
+                <img
+                  alt="image"
+                  src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-coinbase.svg"
+                  class="home-image02"
+                />
+                <img
+                  alt="image"
+                  src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-nasa.svg"
+                  class="home-image03"
                 />
               </div>
             </div>
           </div>
+        </div>
+        <img alt="image" src="public/curved6-1500h.jpg" class="home-image04" />
+        <section class="home-features">
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="public/cube1.svg"
+              class="feature-card-image"
+            />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>Choose the best design system for your next product.</span>
+            </span>
+          </div>
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="public/person1.svg"
+              class="feature-card-image"
+            />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>Get the latest design ideas and turn it into reality.</span>
+            </span>
+          </div>
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="public/rocket1.svg"
+              class="feature-card-image"
+            />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>Make your code easier to maintain using variables.</span>
+            </span>
+          </div>
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="public/credit%20card1.svg"
+              class="feature-card-image"
+            />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>This design system is fully supported on any device.</span>
+            </span>
+          </div>
         </section>
-        <section class="home-create">
-          <div class="home-content10">
-            <div class="home-header14">
-              <h2 class="home-heading09">
-                <span>Create your own</span>
-                <span class="home-text40">environment</span>
-                <span>now!</span>
-                <br />
-              </h2>
-            </div>
-            <button class="home-button3 button">
-              <span>
-                <span>Get started today</span>
-                <br />
+        <section class="home-container05">
+          <div class="home-container06">
+            <h1 class="home-text05 HeadingOne">
+              <span class="home-text06">From nothing to something</span>
+            </h1>
+            <span class="home-text07">
+              <span class="home-text08">
+                The highest status people in human history are those that asked
+                for nothing and gave everything
               </span>
-            </button>
+            </span>
           </div>
-        </section>
-        <section class="home-comparision">
-          <div class="home-header-container3">
-            <div class="home-header15">
-              <h2 class="home-heading10">
-                <span>Environment c</span>
-                <span class="home-text47">omparision</span>
-                <br />
-              </h2>
-            </div>
-            <p class="home-caption18">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-              eiusmod.
-            </p>
-          </div>
-          <div class="home-table">
-            <div class="home-row">
-              <div class="home-headers">
-                <span class="home-text49">Placeholder</span>
-              </div>
-              <div class="home-plans">
-                <div class="home-row01">
-                  <span class="home-text50">TOGHTR</span>
-                  <span class="home-text51">AGENCY</span>
-                  <span class="home-text52">FRELLANCE</span>
-                </div>
-              </div>
-            </div>
-            <div class="home-row02">
-              <div class="home-headers1">
-                <span class="home-text53">
-                  Duis aute irure dolor in reprehenderit
-                </span>
-              </div>
-              <div class="home-plans1">
-                <div class="home-row03">
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="home-row04">
-              <div class="home-headers2">
-                <span class="home-text54">Lorem ipsum dolor sit amet</span>
-              </div>
-              <div class="home-plans2">
-                <div class="home-row05">
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value"><div class="line-line"></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="home-row06">
-              <div class="home-headers3">
-                <span class="home-text55">
-                  Duis aute irure dolor in reprehenderit
-                </span>
-              </div>
-              <div class="home-plans3">
-                <div class="home-row07">
-                  <div class="value">
-                    <span class="home-text56">Custom</span>
-                  </div>
-                  <div class="value"><div class="line-line"></div></div>
-                  <div class="value"><div class="line-line"></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="home-row08">
-              <div class="home-headers4">
-                <span class="home-text57">
-                  Duis aute irure dolor in reprehenderit
-                </span>
-              </div>
-              <div class="home-plans4">
-                <div class="home-row09">
-                  <div class="value">
-                    <span class="home-text58">Unlimited</span>
-                  </div>
-                  <div class="value">
-                    <span class="home-text59">Limited</span>
-                  </div>
-                  <div class="value"><div class="line-line"></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="home-row10">
-              <div class="home-headers5">
-                <span class="home-text60">Lorem ipsum dolor sit amet</span>
-              </div>
-              <div class="home-plans5">
-                <div class="home-row11">
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value"><div class="line-line"></div></div>
-                  <div class="value">
-                    <span class="home-text61">Limited</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="home-row12">
-              <div class="home-headers6">
-                <span class="home-text62">Lorem ipsum dolor sit amet</span>
-              </div>
-              <div class="home-plans6">
-                <div class="home-row13">
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="home-row14">
-              <div class="home-headers7">
-                <span class="home-text63">Lorem ipsum dolor sit amet</span>
-              </div>
-              <div class="home-plans7">
-                <div class="home-row15">
-                  <div class="value">
-                    <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="value">
-                    <span class="home-text64">Limited</span>
-                  </div>
-                  <div class="value"><div class="line-line"></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-data">
-          <div class="home-header-container4">
-            <div class="home-header16">
-              <div class="home-row16">
-                <h2 class="home-heading11">
-                  <span>Understand your data to&nbsp;manage all in one</span>
-                  <span class="home-text66">platform</span>
-                  <br />
-                </h2>
-              </div>
-            </div>
-            <p class="home-caption19">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="home-content11">
-            <div class="home-image08">
+          <div class="home-container07">
+            <div class="home-container08">
               <img
                 alt="image"
-                src="public/data-1400w.png"
-                class="home-image09"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/laptop.jpg"
+                class="home-image05"
               />
-            </div>
-            <div class="home-accordion">
-              <div data-role="accordion-container" class="accordion">
-                <div>
-                  <h3 class="home-header17">Management</h3>
-                  <p data-role="accordion-content" class="accordion-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                </div>
-                <div
-                  class="icon-container-icon-container icon-container-root-class-name"
-                >
-                  <svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-closed"
-                    class="icon-container-icon"
-                  >
-                    <path
-                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-open"
-                    class="icon-container-icon2"
-                  >
-                    <path
-                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div data-role="accordion-container" class="accordion">
-                <div>
-                  <h3 class="home-header18">Integrations</h3>
-                  <p data-role="accordion-content" class="accordion-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                </div>
-                <div
-                  class="icon-container-icon-container icon-container-root-class-name1"
-                >
-                  <svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-closed"
-                    class="icon-container-icon"
-                  >
-                    <path
-                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-open"
-                    class="icon-container-icon2"
-                  >
-                    <path
-                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div data-role="accordion-container" class="accordion">
-                <div>
-                  <h3 class="home-header19">Customer Solutions</h3>
-                  <p data-role="accordion-content" class="accordion-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                </div>
-                <div
-                  class="icon-container-icon-container icon-container-root-class-name2"
-                >
-                  <svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-closed"
-                    class="icon-container-icon"
-                  >
-                    <path
-                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-open"
-                    class="icon-container-icon2"
-                  >
-                    <path
-                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div data-role="accordion-container" class="accordion">
-                <div>
-                  <h3 class="home-header20">Recruiting</h3>
-                  <p data-role="accordion-content" class="accordion-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                </div>
-                <div
-                  class="icon-container-icon-container icon-container-root-class-name3"
-                >
-                  <svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-closed"
-                    class="icon-container-icon"
-                  >
-                    <path
-                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 1024 1024"
-                    data-role="accordion-icon-open"
-                    class="icon-container-icon2"
-                  >
-                    <path
-                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <dangerous-html
-                  html="<script>
- /*
-  Accordion - Code Embed
-  */
-  const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
-  const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
-  const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
-  const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
-
-  accordionContents.forEach((accordionContent) => {
-      accordionContent.style.display = 'none'; //Hides all accordion contents
-  });
-
-  accordionIconsClosed.forEach((icon) => {
-    icon.style.display = 'flex'
-  })
-
-  accordionIconsOpen.forEach((icon) => {
-    icon.style.display = 'none'
-  })
-
-  accordionContainers.forEach((accordionContainer, index) => {
-      accordionContainer.addEventListener('click', () => {
-          if (accordionContents[index].style.display === 'flex') {
-              // If the accordion is already open, close it
-              accordionContents[index].style.display = 'none';
-              accordionIconsClosed[index].style.display = 'flex';
-              accordionIconsOpen[index].style.display = 'none'
-          } else {
-              // If the accordion is closed, open it
-              accordionContents.forEach((accordionContent) => {
-                  accordionContent.style.display = 'none'; //Hides all accordion contents
-              });
-
-              accordionIconsClosed.forEach((accordionIcon) => {
-                  accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
-              });
-
-              accordionIconsOpen.forEach((accordionIcon) => {
-                accordionIcon.style.display = 'none';
-              })
-              
-              accordionContents[index].style.display = 'flex'; // Shows accordion content
-              accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
-              accordionIconsOpen[index].style.display = 'flex';
-          }
-      });
-  });
-</script>
-"
-                ></dangerous-html>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-customer">
-          <div class="home-header21">
-            <h2 class="home-heading12">
-              <span>Customer validation is an essential phase of the</span>
-              <span class="home-text69">product development process</span>
-              <br />
-            </h2>
-          </div>
-          <div class="home-quotes">
-            <div class="home-quote">
-              <p class="home-quote1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="home-author2">
-                <span class="home-name2">Joanna Smith</span>
-                <span class="home-location">Briville</span>
-              </div>
-            </div>
-            <div class="home-quote2">
-              <p class="home-quote3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="home-author3">
-                <span class="home-name3">Joanna Smith</span>
-                <span class="home-location1">Briville</span>
-              </div>
-            </div>
-            <div class="home-quote4">
-              <p class="home-quote5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="home-author4">
-                <span class="home-name4">Joanna Smith</span>
-                <span class="home-location2">Briville</span>
-              </div>
-            </div>
-            <div class="home-quote6">
-              <p class="home-quote7">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="home-author5">
-                <span class="home-name5">Joanna Smith</span>
-                <span class="home-location3">Briville</span>
-              </div>
-            </div>
-          </div>
-          <div class="home-controls1">
-            <button class="home-previous1 button">
-              <svg viewBox="0 0 1024 1024" class="home-icon31">
-                <path
-                  d="M542.165 780.501l-225.835-225.835h494.336c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-494.336l225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-298.667 298.667c-4.096 4.096-7.168 8.789-9.259 13.824-2.176 5.205-3.243 10.795-3.243 16.341 0 10.923 4.181 21.845 12.501 30.165l298.667 298.667c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
-                ></path>
-              </svg>
-            </button>
-            <button class="home-next1 button">
-              <svg viewBox="0 0 1024 1024" class="home-icon33">
-                <path
-                  d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                ></path>
-              </svg>
-            </button>
-            <button class="button home-button4">
-              <span>
-                <span>View all cases</span>
+              <span class="home-text09 Small">
+                <span class="home-text10">
+                  "Over the span of the satellite record, Arctic sea ice has
+                  been declining significantly, while sea ice in the
+                  Antarctichas increased very slightly"
+                </span>
                 <br />
+                <span class="home-text12">-NOAA</span>
               </span>
-            </button>
+              <div class="home-container09">
+                <img
+                  alt="image"
+                  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coding.jpg"
+                  class="home-image06"
+                />
+              </div>
+            </div>
+            <div class="home-container10">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/tasks.jpg"
+                class="home-image07"
+              />
+              <div class="home-container11">
+                <h3 class="HeadingTwo">
+                  <span class="home-text14">
+                    So what does the new record for the lowest level of winter
+                    ice actually mean
+                  </span>
+                </h3>
+                <p>
+                  <br />
+                  <span class="home-text16">
+                    The Arctic Ocean freezes every winter and much of the
+                    sea-ice then thaws every summer, and that process will
+                    continue whatever happens with climate change. Even if the
+                    Arctic continues to be one of the fastest-warming regions of
+                    the world, it will always be plunged into bitterly cold
+                    polar dark every winter. And year-by-year, for all kinds of
+                    natural reasons, there’s huge variety of the state of the
+                    ice.
+                  </span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span class="home-text19">
+                    For a start, it does not automatically follow that a record
+                    amount of ice will melt this summer. More important for
+                    determining the size of the annual thaw is the state of the
+                    weather as the midnight sun approaches and temperatures
+                    rise. But over the more than 30 years of satellite records,
+                    scientists have observed a clear pattern of decline,
+                    decade-by-decade.
+                  </span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span class="home-text22">
+                    The Arctic Ocean freezes every winter and much of the
+                    sea-ice then thaws every summer, and that process will
+                    continue whatever happens with climate change. Even if the
+                    Arctic continues to be one of the fastest-warming regions of
+                    the world, it will always be plunged into bitterly cold
+                    polar dark every winter. And year-by-year, for all kinds of
+                    natural reasons, there’s huge variety of the state of the
+                    ice.
+                  </span>
+                  <br />
+                </p>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="home-faq">
-          <div class="home-header22">
-            <h2 class="home-heading13">
-              <span>Frequently asked&nbsp;</span>
-              <span class="home-text75">questions</span>
-              <span></span>
+        <section class="home-testimonials">
+          <div class="home-container12">
+            <div class="home-container13">
+              <div class="home-container14">
+                <h2 class="home-text23 HeadingOne">Work with us</h2>
+                <p class="home-text24 Lead">
+                  <span class="home-text25">
+                    Whatever your qualification is - we got you!
+                  </span>
+                </p>
+                <p class="home-text26 Body">
+                  <span class="home-text27">
+                    "Take up one idea. Make that one idea your life - think of
+                    it, dream of it, live on that idea. Let the brain, muscles,
+                    nerves, every part of your body, be full of that idea, and
+                    just leave every other idea alone. This is the way to
+                    success. A single rose can be my garden... a single friend,
+                    my world."
+                  </span>
+                </p>
+                <p class="home-text28">Mark Jojansen</p>
+                <p class="home-text29 Small">Project manager, Atlassian</p>
+                <div class="home-container15">
+                  <img
+                    alt="image"
+                    src="public/team-4-200h.jpg"
+                    class="home-image08"
+                  />
+                  <div class="home-container16"></div>
+                  <img
+                    alt="image"
+                    src="public/team-3-200h.jpg"
+                    class="home-image09"
+                  />
+                  <div class="home-container17"></div>
+                  <img
+                    alt="image"
+                    src="public/team-2-200h.jpg"
+                    class="home-image10"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="home-logos">
+              <div class="home-container18">
+                <div class="home-container19">
+                  <div class="home-container20">
+                    <img
+                      alt="image"
+                      src="public/logo-asana.svg"
+                      class="home-image11"
+                    />
+                  </div>
+                  <div class="home-container21">
+                    <img
+                      alt="image"
+                      src="public/logo-slack.svg"
+                      class="home-image12"
+                    />
+                  </div>
+                  <div class="home-container22">
+                    <img
+                      alt="image"
+                      src="public/logo-google-drive.svg"
+                      class="home-image13"
+                    />
+                  </div>
+                </div>
+                <div class="home-container23">
+                  <div class="home-container24">
+                    <img
+                      alt="image"
+                      src="public/logo-shopify.svg"
+                      class="home-image14"
+                    />
+                  </div>
+                  <div class="home-container25">
+                    <img
+                      alt="image"
+                      src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-apple.svg"
+                      class="home-image15"
+                    />
+                  </div>
+                  <div class="home-container26">
+                    <img
+                      alt="image"
+                      src="public/logo-invision.svg"
+                      class="home-image16"
+                    />
+                  </div>
+                </div>
+                <div class="home-container27">
+                  <div class="home-container28">
+                    <img
+                      alt="image"
+                      src="public/logo-attlasian.svg"
+                      class="home-image17"
+                    />
+                  </div>
+                  <div class="home-container29">
+                    <img
+                      alt="image"
+                      src="public/logo-weave.svg"
+                      class="home-image18"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="public/bottom.svg"
+            class="home-bottom-wave-image"
+          />
+          <img alt="image" src="public/waves-white.svg" class="home-image19" />
+          <img alt="image" src="public/top.svg" class="home-top-wave-image" />
+        </section>
+        <section class="home-contaier">
+          <div class="home-container30">
+            <div class="home-container31">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="home-text30 HeadingTwo">
+              <span class="home-text31">Beware The Components</span>
             </h2>
+            <h3 class="home-text32 HeadingTwo">
+              <span class="home-text33">How To Handle Them</span>
+              <br />
+            </h3>
+            <span class="home-text34">
+              <span class="home-text35">
+                We’re constantly trying to express ourselves and actualize our
+                dreams. Don't stop.
+              </span>
+            </span>
           </div>
-          <div class="home-content20">
-            <div class="home-column">
-              <div class="home-element04">
-                <h3 class="home-header23">
-                  Lorem ipsum dolor sit ametetur elit?
-                </h3>
-                <p class="home-content21">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="home-element05">
-                <h3 class="home-header24">
-                  Excepteur sint occaecat cupidatat non sunt in culpa qui
-                  officia deserunt mollit anim id est laborum?
-                </h3>
-                <p class="home-content22">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </div>
-              <div class="home-element06">
-                <h3 class="home-header25">
-                  Tempor incididunt ut labore et dolore magna aliquat enim ad
-                  minim?
-                </h3>
-                <p class="home-content23">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+          <div class="home-container32">
+            <div class="home-container33">
+              <div class="home-container34"></div>
+              <div class="home-container35">
+                <svg viewBox="0 0 987.4285714285713 1024" class="home-icon2">
+                  <path
+                    d="M438.857 508.571l312 312c-79.429 80.571-190.286 130.286-312 130.286-242.286 0-438.857-196.571-438.857-438.857s196.571-438.857 438.857-438.857v435.429zM545.714 512h441.714c0 121.714-49.714 232.571-130.286 312zM950.857 438.857h-438.857v-438.857c242.286 0 438.857 196.571 438.857 438.857z"
+                  ></path>
+                </svg>
+                <h1 class="home-text36 HeadingOne">Search and Discover!</h1>
+                <span class="home-text37">
+                  <span>Website visitors</span>
+                  <span></span>
+                </span>
+                <div class="outline-black-button-container">
+                  <button
+                    class="outline-black-button-button button ButtonSmall"
+                  >
+                    <span>get started</span>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="home-column1">
-              <div class="home-element07">
-                <h3 class="home-header26">
-                  Tempor incididunt ut labore et dolore magna aliquat enim ad
-                  minim?
-                </h3>
-                <p class="home-content24">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-              <div class="home-element08">
-                <h3 class="home-header27">
-                  Lorem ipsum dolor sit ametetur elit?
-                </h3>
-                <p class="home-content25">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="home-element09">
-                <h3 class="home-header28">Incididunt ut labore et dolore?</h3>
-                <p class="home-content26">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="home-footer">
-          <div class="home-content27">
-            <div class="home-main">
-              <div class="home-branding1">
-                <img alt="image" src="public/logo.svg" class="home-image10" />
-                <span class="home-text77">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="home-container36">
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>1. Listen to Social Conversations</span>
+                </h5>
+                <span>
+                  <span>
+                    Gain access to the demographics, psychographics, and
+                    location of unique people who are interested and talk about
+                    your brand.
+                  </span>
                 </span>
               </div>
-              <div class="home-links">
-                <div class="home-column2">
-                  <span class="home-header29">Company</span>
-                  <div class="home-list">
-                    <a href="index.html" class="home-navlink">About</a>
-                    <a href="index.html" class="home-navlink01">Services</a>
-                    <a href="index.html" class="home-navlink02">How</a>
-                    <a href="index.html" class="home-navlink03">
-                      <span class="home-text78">Why</span>
-                      <br />
-                    </a>
-                  </div>
-                </div>
-                <div class="home-column3">
-                  <span class="home-header30">Extern</span>
-                  <div class="home-list1">
-                    <a href="index.html" class="home-navlink04">News</a>
-                    <a href="index.html" class="home-navlink05">Articles</a>
-                    <a href="index.html" class="home-navlink06">Blog</a>
-                    <a href="index.html" class="home-navlink07">Privacy</a>
-                    <a href="index.html" class="home-navlink08">Terms</a>
-                    <a href="index.html" class="home-navlink09">Legal</a>
-                    <a href="index.html" class="home-navlink10">Press</a>
-                  </div>
-                </div>
-                <div class="home-column4">
-                  <span class="home-header31">Social</span>
-                  <div class="home-list2">
-                    <a href="index.html" class="home-navlink11">LinkedIn</a>
-                    <a href="index.html" class="home-navlink12">Twitter</a>
-                    <a href="index.html" class="home-navlink13">Instagram</a>
-                    <a href="index.html" class="home-navlink14">Facebook</a>
-                    <a href="index.html" class="home-navlink15">TikTok</a>
-                  </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>1. Listen to Social Conversations</span>
+                </h5>
+                <span>
+                  <span>
+                    Unify data from Facebook, Instagram, Twitter, LinkedIn, and
+                    Youtube to gain rich insights from easy-to-use reports.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>1. Listen to Social Conversations</span>
+                </h5>
+                <span>
+                  <span>
+                    Track actions taken on your website that originated from
+                    social, and understand the impact on your bottom line.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="home-divider"></div>
+          <div class="home-container37">
+            <div class="home-container38">
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>1. Listen to Social Conversations</span>
+                </h5>
+                <span>
+                  <span>
+                    No matter where you are, Trello stays in sync across all of
+                    your devices.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>1. Listen to Social Conversations</span>
+                </h5>
+                <span>
+                  <span>
+                    Unify data from Facebook, Instagram, Twitter, LinkedIn, and
+                    Youtube to gain rich insights from easy-to-use reports.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>1. Listen to Social Conversations</span>
+                </h5>
+                <span>
+                  <span>
+                    Integrate the apps your team already uses directly into your
+                    workflow.
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="home-container39">
+              <div class="home-container40"></div>
+              <div class="home-container41">
+                <svg viewBox="0 0 1152 1024" class="home-icon4">
+                  <path
+                    d="M1088 901.166c0 45.5 26.028 84.908 64 104.184v15.938c-10.626 1.454-21.472 2.224-32.5 2.224-68.008 0-129.348-28.528-172.722-74.264-26.222 6.982-54.002 10.752-82.778 10.752-159.058 0-288-114.616-288-256s128.942-256 288-256c159.058 0 288 114.616 288 256 0 55.348-19.764 106.592-53.356 148.466-6.824 14.824-10.644 31.312-10.644 48.7zM512 0c278.458 0 504.992 180.614 511.836 405.52-49.182-21.92-103.586-33.52-159.836-33.52-95.56 0-185.816 33.446-254.138 94.178-70.846 62.972-109.862 147.434-109.862 237.822 0 44.672 9.544 87.888 27.736 127.788-5.228 0.126-10.468 0.212-15.736 0.212-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+                  ></path>
+                </svg>
+                <h1 class="home-text40 HeadingOne">Talk and Meet!</h1>
+                <span class="home-text41">
+                  <span>Website visitors</span>
+                  <span></span>
+                </span>
+                <div class="outline-black-button-container">
+                  <button
+                    class="outline-black-button-button button ButtonSmall"
+                  >
+                    <span>get started</span>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="home-bottom">
-              <span class="home-text80">
-                © 2022 togthr - All rights reserved
-              </span>
-              <button data-role="scroll-top" class="home-button5 button">
-                <img alt="image" src="public/arrow.svg" class="home-image11" />
-              </button>
+          </div>
+        </section>
+        <footer class="footer-footer">
+          <div class="footer-container">
+            <div class="footer-container1">
+              <span class="footer-text">SOFT</span>
+              <span>Copyright © 2021 Soft by Creative Tim.</span>
+            </div>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <span class="footer-text02 Large">Company</span>
+                <span class="footer-text03 Large">About Us</span>
+                <span class="footer-text04 Large">Careers</span>
+                <span class="footer-text05 Large">Press</span>
+              </div>
+              <div class="footer-container4">
+                <span class="footer-text06 Large">Pages</span>
+                <span class="footer-text07 Large">Login</span>
+                <span class="footer-text08 Large">Register</span>
+                <span class="footer-text09 Large">About</span>
+              </div>
+              <div class="footer-container5">
+                <span class="footer-text10 Large">Products</span>
+                <span class="footer-text11 Large">Free</span>
+                <span class="footer-text12 Large">PRO</span>
+                <span class="footer-text13 Large">Latest</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <dangerous-html
-            html="<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // get the element with the 'scroll-top' data-role
-  const scrollTopBtn = document.querySelector('[data-role='scroll-top']');
-
-  // when the element is clicked
-  scrollTopBtn.addEventListener('click', function() {
-    // smoothly scroll to the top of the page
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-});
-</script>
-"
-          ></dangerous-html>
-        </div>
+          <img alt="image" src="public/waves-white.svg" class="footer-image" />
+        </footer>
       </div>
     </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
-    <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
   </body>
 </html>
