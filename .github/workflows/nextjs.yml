@@ -48,6 +48,12 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Run a multi-line script
+        run: |
+          node --version
+          yarn install
+          node main.js
+        working-directory: pages
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -56,12 +62,6 @@ jobs:
 #          cache-dependency-path: src/package-lock.json
           cache-dependency-path: '**/pages/yarn.lock'
 #          cache-dependency-path: '**/package-lock.json' # THIS PATTERN did the trick for me.
-      - name: Run a multi-line script
-        run: |
-          node --version
-          yarn install
-          node main.js
-        working-directory: pages
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
