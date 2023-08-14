@@ -1,36 +1,3 @@
-<template>
-  <div class="feature-card-container">
-    <img :alt="image_alt" :src="image_src" class="feature-card-image" />
-    <h5 class="feature-card-text HeadingThree">{{ new_prop }}</h5>
-    <span class="feature-card-text1">{{ text }}</span>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'FeatureCard',
-  props: {
-    image_src: {
-      type: String,
-      default: '/rocket1.svg',
-    },
-    image_alt: {
-      type: String,
-      default: 'image',
-    },
-    text: {
-      type: String,
-      default: 'Get the latest design ideas and turn it into reality.',
-    },
-    new_prop: {
-      type: String,
-      default: 'Design',
-    },
-  },
-}
-</script>
-
-<style scoped>
 .feature-card-container {
   flex: 0 0 auto;
   width: 25%;
@@ -66,4 +33,3 @@ export default {
     width: 100%;
   }
 }
-</style>
