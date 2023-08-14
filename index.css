@@ -672,11 +672,12 @@
 }
 .home-image05 {
   width: 473px;
+  align-self: center;
   box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+  margin-top: var(--dl-space-space-unit);
   object-fit: cover;
-  margin-left: 3rem;
-  margin-right: 3rem;
   border-radius: var(--dl-radius-radius-radius75);
+  margin-bottom: var(--dl-space-space-unit);
 }
 .home-text11 {
   flex: 0 0 auto;
@@ -716,27 +717,19 @@
   flex-direction: column;
 }
 .home-image06 {
-  top: 0px;
-  left: auto;
   width: 90%;
-  bottom: auto;
   display: block;
-  position: absolute;
+  align-self: center;
   box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
-  margin-top: 2rem;
   object-fit: cover;
-  margin-left: 2rem;
-  margin-right: 2rem;
   border-radius: var(--dl-radius-radius-radius75);
-  margin-bottom: 2rem;
 }
 .home-container10 {
   width: 50%;
+  height: 100%;
   display: flex;
   position: relative;
   align-items: flex-start;
-  padding-left: 0px;
-  padding-right: 0px;
   flex-direction: column;
 }
 .home-text15 {
@@ -757,26 +750,20 @@
   justify-content: center;
 }
 .home-text16 {
-  color: rgb(203, 12, 159);
-  display: inline;
-  font-weight: 400;
-  white-space: normal;
+  color: #cb0c9f;
   background-color: rgb(255, 255, 255);
 }
 .home-text18 {
-  color: rgb(203, 12, 159);
-  font-weight: 400;
+  color: #cb0c9f;
   background-color: rgb(255, 255, 255);
 }
 .home-image07 {
   width: 473px;
   height: auto;
-  align-self: flex-end;
+  align-self: center;
   box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
   margin-top: var(--dl-space-space-tripleunit);
   object-fit: cover;
-  margin-left: 3rem;
-  margin-right: 3rem;
   border-radius: var(--dl-radius-radius-radius75);
   margin-bottom: var(--dl-space-space-tripleunit);
 }
@@ -787,11 +774,17 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.home-text19 {
+  align-self: center;
+}
 .home-text20 {
   color: rgb(37, 47, 64);
   font-weight: 700;
   white-space: normal;
   background-color: rgb(255, 255, 255);
+}
+.home-text21 {
+  align-self: center;
 }
 .home-text23 {
   color: #67748e;
