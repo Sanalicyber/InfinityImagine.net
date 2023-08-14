@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'frontend' # Here the path
+        working-directory: 'pages' # Here the path
     steps:
       - name: Checkout
         uses: actions/checkout@v3
