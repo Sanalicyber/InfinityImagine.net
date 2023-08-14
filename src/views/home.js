@@ -138,7 +138,7 @@ const Home = (props) => {
               <span className="home-text20">
                 &quot;Over the span of the satellite record, Arctic sea ice has
                 been declining significantly, while sea ice in the Antarctichas
-                increased very slightly&quot; new2
+                increased very slightly&quot; new3
               </span>
               <br></br>
               <span className="home-text22">-NOAA</span>
