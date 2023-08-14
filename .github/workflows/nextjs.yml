@@ -52,7 +52,7 @@ jobs:
         run: |
           node --version
           yarn install
-          node index.js
+          node _app.js
         working-directory: pages
       - name: Setup Node
         uses: actions/setup-node@v3
