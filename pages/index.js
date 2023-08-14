@@ -137,7 +137,7 @@ const Home = (props) => {
                 <span className="home-text20">
                   &quot;Over the span of the satellite record, Arctic sea ice
                   has been declining significantly, while sea ice in the
-                  Antarctichas increased very slightly&quot; new3
+                  Antarctichas increased very slightly&quot; new4
                 </span>
                 <br></br>
                 <span className="home-text22">-NOAA</span>
@@ -559,7 +559,7 @@ const Home = (props) => {
           }
           .home-container08 {
             flex: 0 0 auto;
-            width: 45%;
+            width: 50%;
             height: 100%;
             display: flex;
             position: relative;
@@ -625,7 +625,7 @@ const Home = (props) => {
           .home-container10 {
             width: 10%;
             height: 100%;
-            display: flex;
+            display: none;
             position: relative;
             align-self: center;
             align-items: flex-start;
@@ -650,7 +650,7 @@ const Home = (props) => {
             justify-content: center;
           }
           .home-container11 {
-            width: 45%;
+            width: 50%;
             height: 100%;
             display: flex;
             position: relative;
