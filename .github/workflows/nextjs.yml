@@ -52,7 +52,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-          cache: "yarn"pages
+          cache: "yarn"
 #          cache-dependency-path: src/package-lock.json
           cache-dependency-path: ./pages/yarn.lock
 #          cache-dependency-path: '**/package-lock.json' # THIS PATTERN did the trick for me.
