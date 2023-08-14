@@ -54,7 +54,7 @@ jobs:
           node-version: "16"
           cache: "yarn"
 #          cache-dependency-path: src/package-lock.json
-          cache-dependency-path: ./pages/yarn.lock
+          cache-dependency-path: '**/pages/yarn.lock'
 #          cache-dependency-path: '**/package-lock.json' # THIS PATTERN did the trick for me.
       - name: Run a multi-line script
         run: |
